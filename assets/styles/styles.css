@@ -595,6 +595,17 @@ video {
   line-height: 1.5rem;
 }
 
+.btn-lg {
+  gap: 0.625rem;
+  border-radius: 10px;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .btn-md {
   gap: 0.5rem;
   border-radius: 0.5rem;
@@ -1337,6 +1348,19 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+@media (min-width: 1024px) {
+  .lg\:btn-xl {
+    gap: 0.75rem;
+    border-radius: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .hover\:opacity-100:hover {
