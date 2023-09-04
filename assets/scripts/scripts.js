@@ -24,11 +24,11 @@ $(window).on("load", function () {
                     disableOnInteraction: true,
                 },
                 navigation: {
-                    nextEl: '.designpeer-slide-next',
-                    prevEl: '.designpeer-slide-prev',
+                    nextEl: `#${$thisID} .designpeer-slide-next`,
+                    prevEl: `#${$thisID} .designpeer-slide-prev`,
                 },
                 pagination: {
-                    el: '.designpeer-slide-pagination',
+                    el: `#${$thisID} .designpeer-slide-pagination`,
                     clickable: true,
                 },
                 breakpoints: {
