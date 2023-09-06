@@ -136,3 +136,13 @@ $(window).on("load", function () {
     // -----------------------------------------------
 
 });
+
+
+
+if ($(".paralex-element-1").length > 0) {
+    window.addEventListener("scroll", () => {
+        let sec = window.scrollY - $(".paralex-element-2").offset().top + 1000
+        document.querySelector(".paralex-element-1").style.left = sec * .35 + "px";
+        document.querySelector(".paralex-element-2").style.right = sec * .35 + "px";
+    });
+}
