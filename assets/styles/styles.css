@@ -1777,6 +1777,15 @@ video {
   row-gap: 1.5rem;
 }
 
+.gap-x-\[30px\] {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1853,6 +1862,21 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-teal-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(94 234 212 / var(--tw-border-opacity));
+}
+
+.border-theme-teal-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(95 233 208 / var(--tw-border-opacity));
+}
+
+.border-theme-violet-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(195 181 253 / var(--tw-border-opacity));
 }
 
 .bg-black {
