@@ -90,6 +90,7 @@ $(window).on("load", function () {
             // Open default actived tab
             $accordionTitle.each(function () {
                 if ($(this).hasClass("active-default")) {
+                    $(this).parent().addClass("active");
                     $(this).addClass("show active");
                     $(this).next().slideDown($accordionSpeed);
                 }
@@ -100,12 +101,16 @@ $(window).on("load", function () {
 
             $accordionTitle.click(function (e) {
                 e.preventDefault();
-                var $this = $(this);
+                let $this = $(this);
+
                 if ($accordionType === "accordion") {
                     if ($this.hasClass("show")) {
                         $this.removeClass("show active");
+                        $this.parent().removeClass("active");
                         $this.next().slideUp($accordionSpeed);
                     } else {
+                        $designpeerAccordion.find(".designpeer-accordion-item").removeClass("active");
+                        $this.parent().addClass("active");
                         $this.parent().parent().find(".designpeer-tab-title").removeClass("show active");
                         $this.parent().parent().find(".designpeer-tab-content").slideUp($accordionSpeed);
                         $this.toggleClass("show active");
@@ -115,9 +120,11 @@ $(window).on("load", function () {
                     // For acccordion type 'toggle'
                     if ($this.hasClass("show")) {
                         $this.removeClass("show active");
+                        $this.parent().removeClass("active");
                         $this.next().slideUp($accordionSpeed);
                     } else {
                         $this.addClass("show active");
+                        $this.parent().addClass("active");
                         $this.next().slideDown($accordionSpeed);
                     }
                 }
