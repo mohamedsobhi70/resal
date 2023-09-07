@@ -146,3 +146,8 @@ if ($(".paralex-element-1").length > 0) {
         document.querySelector(".paralex-element-2").style.right = sec * .55 + "px";
     });
 }
+
+
+AOS.init({
+    once: true,duration: 1200, 
+});
