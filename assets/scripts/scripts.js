@@ -138,7 +138,7 @@ $(window).on("load", function () {
 });
 
 
-
+// 
 if ($(".paralex-element-1").length > 0) {
     window.addEventListener("scroll", () => {
         let sec = window.scrollY - $(".paralex-element-2").offset().top + 1000
@@ -146,6 +146,9 @@ if ($(".paralex-element-1").length > 0) {
         document.querySelector(".paralex-element-2").style.right = sec * .55 + "px";
     });
 }
+
+
+// 
 if ($(".filters-container").length > 0) {
     $(".filters-container").each(function () {
         let th = $(this);
@@ -162,4 +165,10 @@ if ($(".filters-container").length > 0) {
             }
         })
     })
+}
+
+
+// 
+if ($(".footer-cta-img").length > 0) {
+    $(".footer-cta-img").css("max-height", $(".footer-cta-content").innerHeight() + "px")
 }
