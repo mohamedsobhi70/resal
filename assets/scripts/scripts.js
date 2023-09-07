@@ -146,3 +146,20 @@ if ($(".paralex-element-1").length > 0) {
         document.querySelector(".paralex-element-2").style.right = sec * .55 + "px";
     });
 }
+if ($(".filters-container").length > 0) {
+    $(".filters-container").each(function () {
+        let th = $(this);
+        th.find(".filter-item").on("click", function () {
+            th.find(".filter-item").removeClass("active");
+            $(this).addClass("active");
+            let filt = $(this).attr("data-filter");
+            if (filt === "*") {
+                $(".resourses-container .resource-item").removeClass("hidden");
+            }
+            else {
+                $(".resourses-container .resource-item").removeClass("hidden");
+                $(`.resourses-container .resource-item:not(${filt})`).addClass("hidden");
+            }
+        })
+    })
+}
