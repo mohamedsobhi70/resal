@@ -628,7 +628,8 @@ body {
   }
 }
 
-.filter-item {
+.filter-item,
+  .resource-cat {
   cursor: pointer;
   border-radius: 5px;
   padding-top: 0.75rem;
@@ -646,7 +647,8 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .filter-item {
+  .filter-item,
+  .resource-cat {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     font-size: 1.125rem;
@@ -655,7 +657,9 @@ body {
 }
 
 .filter-item.active,
-  .filter-item:hover {
+  .filter-item:hover,
+  .resource-cat.active,
+  .resource-cat:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(240 243 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -902,6 +906,33 @@ body {
   color: rgb(0 37 158 / var(--tw-text-opacity));
 }
 
+.btn-primary-violet {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 57 238 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-primary-violet:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(105 39 218 / var(--tw-bg-opacity));
+}
+
+.btn-primary-violet:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 57 238 / var(--tw-bg-opacity));
+  --tw-shadow: 0px 0px 0px 6px #F0F3FF;
+  --tw-shadow-colored: 0px 0px 0px 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.btn-primary-violet:disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 233 254 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 37 158 / var(--tw-text-opacity));
+}
+
 .btn-primary-green {
   --tw-bg-opacity: 1;
   background-color: rgb(14 147 132 / var(--tw-bg-opacity));
@@ -964,6 +995,19 @@ body {
 }
 
 .btn-secondary-green:active {
+  --tw-shadow: 0px 0px 0px 6px #F0F3FF;
+  --tw-shadow-colored: 0px 0px 0px 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.btn-secondary-violet {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 233 254 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(105 39 218 / var(--tw-text-opacity));
+}
+
+.btn-secondary-violet:active {
   --tw-shadow: 0px 0px 0px 6px #F0F3FF;
   --tw-shadow-colored: 0px 0px 0px 6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1842,16 +1886,6 @@ body {
   margin-top: auto;
 }
 
-.ms-5 {
-  -webkit-margin-start: 1.25rem;
-          margin-inline-start: 1.25rem;
-}
-
-.ms-8 {
-  -webkit-margin-start: 2rem;
-          margin-inline-start: 2rem;
-}
-
 .flex {
   display: flex;
 }
@@ -1880,6 +1914,10 @@ body {
   height: 2.25rem;
 }
 
+.h-\[288px\] {
+  height: 288px;
+}
+
 .h-\[304px\] {
   height: 304px;
 }
@@ -1905,20 +1943,12 @@ body {
   height: 100%;
 }
 
-.h-\[576\] {
-  height: 576;
-}
-
-.h-\[576px\] {
-  height: 576px;
-}
-
-.h-\[288px\] {
-  height: 288px;
-}
-
 .max-h-\[400px\] {
   max-height: 400px;
+}
+
+.max-h-\[656px\] {
+  max-height: 656px;
 }
 
 .min-h-\[300px\] {
@@ -2253,11 +2283,6 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
@@ -2373,6 +2398,11 @@ body {
           padding-inline-end: 1.5rem;
 }
 
+.ps-4 {
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
+}
+
 .ps-6 {
   -webkit-padding-start: 1.5rem;
           padding-inline-start: 1.5rem;
@@ -2388,11 +2418,6 @@ body {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.ps-4 {
-  -webkit-padding-start: 1rem;
-          padding-inline-start: 1rem;
 }
 
 .text-center {
@@ -2614,16 +2639,8 @@ body {
   }
 }
 
-.marker\:text-green-800 *::marker {
-  color: rgb(22 101 52 );
-}
-
 .marker\:text-light-5-disable *::marker {
   color: rgb(193 193 195 );
-}
-
-.marker\:text-green-800::marker {
-  color: rgb(22 101 52 );
 }
 
 .marker\:text-light-5-disable::marker {
@@ -2801,6 +2818,10 @@ body {
     height: 1440px;
   }
 
+  .lg\:h-\[576px\] {
+    height: 576px;
+  }
+
   .lg\:h-\[612px\] {
     height: 612px;
   }
@@ -2820,10 +2841,6 @@ body {
   .lg\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
-  }
-
-  .lg\:h-\[576px\] {
-    height: 576px;
   }
 
   .lg\:w-1\/2 {
