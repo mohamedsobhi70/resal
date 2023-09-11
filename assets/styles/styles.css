@@ -620,8 +620,8 @@ body {
 @media (min-width: 1024px) {
   .nav-item {
     border-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
     font-weight: 400;
   }
 }
@@ -1181,6 +1181,33 @@ body {
   color: rgb(0 37 158 / var(--tw-text-opacity));
 }
 
+.btn-primary-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 197 21 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-primary-yellow:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 133 4 / var(--tw-bg-opacity));
+}
+
+.btn-primary-yellow:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 197 21 / var(--tw-bg-opacity));
+  --tw-shadow: 0px 0px 0px 6px #F0F3FF;
+  --tw-shadow-colored: 0px 0px 0px 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.btn-primary-yellow:disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 251 239 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 37 158 / var(--tw-text-opacity));
+}
+
 .btn-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(240 243 255 / var(--tw-bg-opacity));
@@ -1345,7 +1372,7 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(254 251 232 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(250 197 21 / var(--tw-text-opacity));
+  color: rgb(202 133 4 / var(--tw-text-opacity));
 }
 
 /* ==================================== */
@@ -2624,6 +2651,11 @@ body {
   border-color: rgb(195 181 253 / var(--tw-border-opacity));
 }
 
+.border-theme-yellow-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 197 21 / var(--tw-border-opacity));
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -2787,16 +2819,6 @@ body {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .py-8 {
@@ -3040,6 +3062,18 @@ body {
 
 .shadow-about-vid {
   --tw-shadow: 0px 0px 250px 0px rgba(236, 233, 254, 0.50);
+  --tw-shadow-colored: 0px 0px 250px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-green-vid {
+  --tw-shadow: 0px 0px 250px 0px rgba(95, 233, 208, 0.50);
+  --tw-shadow-colored: 0px 0px 250px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-yellow-vid {
+  --tw-shadow: 0px 0px 250px 0px rgba(255, 243, 204, 0.25);
   --tw-shadow-colored: 0px 0px 250px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
