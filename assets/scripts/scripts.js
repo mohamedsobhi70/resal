@@ -74,6 +74,40 @@ $(window).on("load", function () {
             });
         });
     }
+    // mega menu tabs Tabs Component 
+    if ($(".megamenu").length > 0) {
+        $(".megamenu-tab-content").addClass("hidden")
+        $(".megamenu-tab-content:first-child").removeClass("hidden")
+        $(".megamenu-tab-item:first-child").addClass("active")
+        $(".megamenu-tab-item").on("mouseenter", function () {
+            let it = $(this).attr("data-item");
+            $(".megamenu-tab-item").removeClass("active")
+            $(this).addClass("active")
+            $(".megamenu-tab-content").addClass("hidden")
+            $(`.megamenu-tab-content[data-item=${it}]`).removeClass("hidden")
+        })
+
+    }
+    // mega menu tabs Tabs Component 
+    if ($(".mobile-menu").length > 0) {
+        $(".mobile-menu-btn").on("click", function () {
+            $(".mobile-menu").addClass("active")
+        })
+        $(".close-mobile-menu").on("click", function () {
+            $(".mobile-menu").removeClass("active")
+        }) 
+        $(".close-megamenu-tab-content").on("click", function () {
+            $(".megamenu-tab-content").addClass("hidden")
+        })
+    }
+
+    // -----------------------------------------------
+    // ===================================================================
+    // -----------------------------------------------
+
+    if ($(window).width() < 768) {
+        $(".megamenu-tab-content").addClass("hidden")
+    }
 
     // -----------------------------------------------
     // ===================================================================
@@ -147,7 +181,6 @@ if ($(".paralex-element-1").length > 0) {
     });
 }
 
-
 // 
 if ($(".filters-container").length > 0) {
     $(".filters-container").each(function () {
@@ -172,3 +205,13 @@ if ($(".filters-container").length > 0) {
 if ($(".footer-cta-img").length > 0) {
     $(".footer-cta-img").css("max-height", $(".footer-cta-content").innerHeight() + "px")
 }
+
+// Mega Menu
+if ($(".nav-has-megamenu").length > 0) {
+    $(".nav-has-megamenu").on("mouseenter", function () {
+        $(this).find(".megamenu").addClass("active");
+    }).on("mouseleave", function () {
+        $(this).find(".megamenu").removeClass("active");
+    })
+}
+

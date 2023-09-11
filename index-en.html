@@ -19,57 +19,627 @@
 <body>
     <!-- Start Resal Header  -->
     <header class="resal-header">
-        <div class="container flex items-center justify-between py-6">
+        <div class="container flex items-center justify-between relative py-8 lg:py-0">
             <a href="index.html">
                 <img src="assets/images/Logo.svg" width="108" height="32" alt="Resal logo">
                 <span class="sr-only">Resal Logo Home Page</span>
             </a>
 
-            <button class="lg:hidden">
+            <button class="lg:hidden mobile-menu-btn">
                 <img src="assets/images/icons/menu.svg" width="24" height="24" alt="menu icon">
                 <span class="sr-only">
                     Menu Icon
                 </span>
             </button>
-            <div class="hidden lg:flex items-center gap-12">
-                <nav>
-                    <ul class="flex items-center gap-8">
+
+            <div class="mobile-menu">
+                <div class="flex lg:hidden justify-end">
+                    <button class="close-mobile-menu">
+                        <img src="assets/images/icons/close.svg" width="24" height="24" alt="close">
+                        <span class="sr-only">Close icon</span>
+                    </button>
+                </div>
+                <nav class="grow lg:grow-0 h-full lg:w-auto overflow-y-auto lg:overflow-visible">
+                    <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-8">
+                        <li class="nav-item nav-has-megamenu">
+                            <a href="#">
+                                المنتجات
+                            </a>
+                            <div class="megamenu">
+                                <ul class="ps-6 lg:basis-1/3 lg:p-6 flex flex-col gap-4 lg:gap-2">
+                                    <li class="megamenu-tab-item" data-item="glee">
+                                        <h6 class="megamenu-tab-heading">
+                                            رسال للمكافآت
+                                        </h6>
+                                        <p class="megamenu-tab-text">
+                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق الموزعة والمختلطة.
+                                            تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من 100 دولة.
+                                        </p>
+                                    </li>
+                                    <li class="megamenu-tab-item" data-item="boonus">
+                                        <h6 class="megamenu-tab-heading">
+                                            Boonus
+                                        </h6>
+                                        <p class="megamenu-tab-text">
+                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق الموزعة والمختلطة.
+                                            تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من 100 دولة.
+                                        </p>
+                                    </li>
+                                    <li class="megamenu-tab-item" data-item="channels">
+                                        <h6 class="megamenu-tab-heading">
+                                            Channels
+                                        </h6>
+                                        <p class="megamenu-tab-text">
+                                            اكتشف منصة الإهداء المصممة للتواصل البشري واستراتيجية إهداء عالمية وقابلة
+                                            للتطوير حقًا. استخدم الإهداء المستند إلى البيانات لزيادة خط المبيعات وإبرام
+                                            المزيد من الصفقات والتواصل مع المزيد من العملاء.
+                                        </p>
+                                    </li>
+                                    <li class="megamenu-tab-item" data-item="xcard">
+                                        <h6 class="megamenu-tab-heading">
+                                            xcard
+                                        </h6>
+                                        <p class="megamenu-tab-text">
+                                            نحن نجمع كل ما هو مطلوب لبناء منتجات ذات مكافآت وحوافز ومدفوعات على مستوى
+                                            العالم. توسع باستخدام المنتجات التي تتميز بتجارب مجزية مستهدفة وشخصية على
+                                            نطاق عالمي.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="lg:basis-2/3 lg:border-s border-system-neutral-20">
+                                    <div class="megamenu-tab-content" data-item="glee">
+                                        <div class="px-[30px] lg:px-6 p-6 flex flex-col gap-8">
+                                            <div class="flex lg:hidden justify-end">
+                                                <button class="close-megamenu-tab-content">
+                                                    <img src="assets/images/icons/close.svg" width="24" height="24"
+                                                        alt="close">
+                                                    <span class="sr-only">Close icon</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-theme-teal-500 font-bold">
+                                                    glee
+                                                </span>
+                                                <img src="assets/images/Logo.svg" width="81" height="24"
+                                                    alt="resal logo">
+                                            </div>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8">
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                منصة
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                للموارد البشرية
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                حلول للتسويق
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                للفرق التسويق
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                سوق المكافآت العالمية
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                لفرق المبيعات
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                كل المميزات.
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                للمطورين
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="megamenu-tab-content" data-item="boonus">
+                                        <div class="px-[30px] lg:px-6 p-6 flex flex-col gap-8">
+                                            <div class="flex lg:hidden justify-end">
+                                                <button class="close-megamenu-tab-content">
+                                                    <img src="assets/images/icons/close.svg" width="24" height="24"
+                                                        alt="close">
+                                                    <span class="sr-only">Close icon</span>
+                                                </button>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-theme-violet-600 font-bold">
+                                                    Boonus
+                                                </span>
+                                                <img src="assets/images/Logo.svg" width="81" height="24"
+                                                    alt="resal logo">
+                                            </div>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8">
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                حلول للتسويق
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                للفرق التسويق
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                سوق المكافآت العالمية
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                لفرق المبيعات
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                كل المميزات.
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                للمطورين
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="megamenu-tab-content" data-item="channels">
+                                        <div class="px-[30px] lg:px-6 p-6 flex flex-col gap-8">
+                                            <div class="flex lg:hidden justify-end">
+                                                <button class="close-megamenu-tab-content">
+                                                    <img src="assets/images/icons/close.svg" width="24" height="24"
+                                                        alt="close">
+                                                    <span class="sr-only">Close icon</span>
+                                                </button>
+                                            </div>
+                                                  <div class="flex items-center gap-2">
+                                                    <span class="text-theme-orange-400 font-bold">
+                                                        channels
+                                                    </span>
+                                                <img src="assets/images/Logo.svg" width="81" height="24"
+                                                    alt="resal logo">
+                                            </div>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8">
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                للفرق التسويق
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                سوق المكافآت العالمية
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                لفرق المبيعات
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                كل المميزات.
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                للمطورين
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="megamenu-tab-content" data-item="xcard">
+                                        <div class="px-[30px] lg:px-6 p-6 flex flex-col gap-8">
+                                            <div class="flex lg:hidden justify-end">
+                                                <button class="close-megamenu-tab-content">
+                                                    <img src="assets/images/icons/close.svg" width="24" height="24"
+                                                        alt="close">
+                                                    <span class="sr-only">Close icon</span>
+                                                </button>
+                                            </div>
+                                               <div class="flex items-center gap-2">
+                                                <span class="text-theme-yellow-400 font-bold">
+                                                    xcard
+                                                </span>
+                                                <img src="assets/images/Logo.svg" width="81" height="24"
+                                                    alt="resal logo">
+                                            </div>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8">
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                سوق المكافآت العالمية
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                لفرق المبيعات
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                كل المميزات.
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- item  -->
+                                                <div class="flex items-start gap-4">
+                                                    <img src="assets/images/icons/grammerly.svg" width="24" height="24"
+                                                        alt="grammerly">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h6 class="resal-item-heading">
+                                                            <a href="#">
+                                                                للمطورين
+                                                            </a>
+                                                        </h6>
+                                                        <p class="resal-item-text">
+                                                            نحن نجمع كل شيء معًا لتوسيع نطاق برامج المكافآت للفرق
+                                                            الموزعة
+                                                            والمختلطة. تقدم رسال مكافآت تجارية يحبها الأشخاص عبر أكثر من
+                                                            100
+                                                            دولة.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <a href="#">
-                                Products
+                                الحلول
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#">
-                                Solutions
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">
-                                Partners
+                                الشركاء
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="about.html">
-                                Company
+                                عن رسال
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="resources-list.html">
-                                Resources
+                                الموارد
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <div class="flex items-center gap-3">
+                <div class="flex flex-col-reverse sticky bottom-0 lg:flex-row lg:items-center gap-8 lg:gap-3">
                     <a href="#" class="btn btn-asecondary btn-md">
-                        Book a Demo
+                        احجز نسخة تجريبية
                     </a>
 
                     <!-- Change Language  -->
-                    <a href="index.html" class="header-lang">
-                        AR
-                        <img src="assets/images/icons/ar.svg" width="20" height="20" alt="English">
+                    <a href="index-en.html" class="header-lang">
+                        <img src="assets/images/icons/englishicon.svg" width="20" height="20" alt="English">
+                        EN
                     </a>
                 </div>
             </div>
