@@ -76,16 +76,59 @@ $(window).on("load", function () {
     }
     // mega menu tabs Tabs Component 
     if ($(".megamenu").length > 0) {
-        $(".megamenu-tab-content").addClass("hidden")
-        $(".megamenu-tab-content:first-child").removeClass("hidden")
-        $(".megamenu-tab-item:first-child").addClass("active")
-        $(".megamenu-tab-item").on("mouseenter", function () {
-            let it = $(this).attr("data-item");
-            $(".megamenu-tab-item").removeClass("active")
-            $(this).addClass("active")
-            $(".megamenu-tab-content").addClass("hidden")
-            $(`.megamenu-tab-content[data-item=${it}]`).removeClass("hidden")
-        })
+        function tabContent() {
+            $(".megamenu-tab-content").addClass("hidden");
+            $(".megamenu-tab-item").removeClass("active");
+            $(".megamenu-tab-item:first-child").addClass("active");
+
+            if ($(window).width() > 1024) {
+                $(".megamenu-tab-content:first-child").removeClass("hidden");
+            }
+
+            $(".megamenu-tab-item").on("mouseenter", function () {
+                let it = $(this).attr("data-item");
+                if ($(window).width() > 1024) {
+                    $(".megamenu-tab-item").removeClass("active");
+                    $(this).addClass("active");
+                    $(".megamenu-tab-content").addClass("hidden");
+                    $(`.megamenu-tab-content[data-item=${it}]`).removeClass("hidden");
+                }
+            }).on("click", function () {
+                if ($(window).width() < 1024) {
+                    $(".megamenu-tab-content").addClass("hidden");
+                    let it = $(this).attr("data-item");
+                    $(".megamenu-tab-content").addClass("hidden");
+                    $(`.megamenu-tab-content[data-item=${it}]`).removeClass("hidden");
+                }
+
+            });
+            // $(".megamenu-tab-content").addClass("hidden");
+            // if ($(window).width() > 1024) {
+            //     $(".megamenu-tab-content:first-child").removeClass("hidden");
+            //     $(".megamenu-tab-item:first-child").addClass("active");
+            //     $(".megamenu-tab-item").on("mouseenter", function () {
+            //         let it = $(this).attr("data-item");
+            //         $(".megamenu-tab-item").removeClass("active");
+            //         $(this).addClass("active");
+            //         $(".megamenu-tab-content").addClass("hidden");
+            //         $(`.megamenu-tab-content[data-item=${it}]`).removeClass("hidden");
+            //     });
+            // } else {
+            //     console.log("less");
+            //     $(".megamenu-tab-item").on("click", function () {
+            //         $(".megamenu-tab-content").addClass("hidden");
+            //         let it = $(this).attr("data-item");
+            //         $(".megamenu-tab-content").addClass("hidden");
+            //         $(`.megamenu-tab-content[data-item=${it}]`).removeClass("hidden");
+            //     });
+            // }
+        }
+
+        tabContent();
+
+        $(window).on("resize", function () {
+            tabContent();
+        });
 
     }
     // mega menu tabs Tabs Component 
@@ -95,9 +138,9 @@ $(window).on("load", function () {
         })
         $(".close-mobile-menu").on("click", function () {
             $(".mobile-menu").removeClass("active")
-        }) 
+        })
         $(".close-megamenu-tab-content").on("click", function () {
-            $(".megamenu-tab-content").addClass("hidden")
+            $(".megamenu-tab-content").addClass("hidden").removeClass("active")
         })
     }
 
@@ -105,9 +148,9 @@ $(window).on("load", function () {
     // ===================================================================
     // -----------------------------------------------
 
-    if ($(window).width() < 768) {
-        $(".megamenu-tab-content").addClass("hidden")
-    }
+    // if ($(window).width() < 768) {
+    //     $(".megamenu-tab-content").addClass("hidden")
+    // }
 
     // -----------------------------------------------
     // ===================================================================
