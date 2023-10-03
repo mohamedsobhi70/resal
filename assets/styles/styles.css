@@ -903,6 +903,18 @@ body {
   transition-duration: 300ms;
 }
 
+.theme-green .pagination-item.active,.theme-green 
+  .pagination-item:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 147 132 / var(--tw-bg-opacity));
+}
+
+.theme-orange .pagination-item.active,.theme-orange 
+  .pagination-item:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 105 46 / var(--tw-bg-opacity));
+}
+
 .pagination-item.active,
   .pagination-item:hover {
   --tw-bg-opacity: 1;
@@ -1080,6 +1092,16 @@ body {
   background-color: rgb(21 72 239 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.theme-green .btn-primary:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 147 132 / var(--tw-bg-opacity));
+}
+
+.theme-orange .btn-primary:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 105 46 / var(--tw-bg-opacity));
 }
 
 .btn-primary:hover {
@@ -1266,6 +1288,16 @@ body {
 .btn-link {
   --tw-text-opacity: 1;
   color: rgb(21 72 239 / var(--tw-text-opacity));
+}
+
+.theme-green .btn-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(16 117 105 / var(--tw-text-opacity));
+}
+
+.theme-orange .btn-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(224 79 22 / var(--tw-text-opacity));
 }
 
 .btn-link:hover {
@@ -2457,9 +2489,19 @@ body {
   transition-duration: 500ms;
 }
 
-.designpeer-accordion.green-acc .designpeer-accordion-item.active {
+.theme-green .designpeer-accordion.green-acc .designpeer-accordion-item.active {
   --tw-border-opacity: 1;
   border-color: rgb(21 183 158 / var(--tw-border-opacity));
+}
+
+.theme-orange .designpeer-accordion.green-acc .designpeer-accordion-item.active {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 135 68 / var(--tw-border-opacity));
+}
+
+.designpeer-accordion.green-acc .designpeer-accordion-item.active {
+  --tw-border-opacity: 1;
+  border-color: rgb(44 97 245 / var(--tw-border-opacity));
   --tw-shadow: 0px 0px 0px 6px rgba(204, 251, 239, 0.50);
   --tw-shadow-colored: 0px 0px 0px 6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -2736,6 +2778,48 @@ body {
   background-color: rgb(253 234 215 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(224 79 22 / var(--tw-text-opacity));
+}
+
+/* change background bg-system-primary-500 */
+
+.theme-green .bg-system-primary-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 147 132 / var(--tw-bg-opacity));
+}
+
+/* change  text-system-primary-700  */
+
+.theme-green .text-system-primary-700 {
+  --tw-text-opacity: 1;
+  color: rgb(16 117 105 / var(--tw-text-opacity));
+}
+
+/* change  border-system-primary-500  */
+
+.theme-green .border-system-primary-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(21 183 158 / var(--tw-border-opacity));
+}
+
+/* change background bg-system-primary-500 */
+
+.theme-orange .bg-system-primary-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 105 46 / var(--tw-bg-opacity));
+}
+
+/* change  text-system-primary-700  */
+
+.theme-orange .text-system-primary-700 {
+  --tw-text-opacity: 1;
+  color: rgb(224 79 22 / var(--tw-text-opacity));
+}
+
+/* change  text-system-primary-700  */
+
+.theme-orange .border-system-primary-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 135 68 / var(--tw-border-opacity));
 }
 
 .sr-only {
@@ -3303,6 +3387,11 @@ body {
   border-color: rgb(221 221 223 / var(--tw-border-opacity));
 }
 
+.border-system-primary-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(44 97 245 / var(--tw-border-opacity));
+}
+
 .border-theme-teal-300 {
   --tw-border-opacity: 1;
   border-color: rgb(95 233 208 / var(--tw-border-opacity));
@@ -3786,6 +3875,21 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-system-primary-50 {
+  --tw-shadow-color: #F0F3FF;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-system-primary-700 {
+  --tw-shadow-color: #0037EB;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-system-primary-100 {
+  --tw-shadow-color: #D1DCFF;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -4012,6 +4116,10 @@ body {
 
   .lg\:h-\[1440px\] {
     height: 1440px;
+  }
+
+  .lg\:h-\[379px\] {
+    height: 379px;
   }
 
   .lg\:h-\[612px\] {
