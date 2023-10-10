@@ -11,14 +11,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/aos.css">
     <link rel="stylesheet" href="assets/styles/swiper.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <title>Resal - Home Page</title>
 </head>
 
-<body class="theme-orange">
+<body class="theme-violet">
     <!-- Start Resal Header  -->
-    <header class="resal-header">
+    <header class="resal-header" data-aos="fade-down">
         <div class="container flex items-center justify-between relative py-8 lg:py-0">
             <a href="index.html">
                 <img src="assets/images/Logo.svg" width="108" height="32" alt="Resal logo">
@@ -651,7 +652,8 @@
     <main>
 
         <!-- Download Application Section -->
-        <div class="hidden lg:flex flex-col gap-4 fixed bottom-1/2 -translate-y end-0 z-40 ltr:rotate-180">
+        <div class="hidden lg:flex flex-col gap-4 fixed bottom-1/2 -translate-y end-0 z-40 ltr:rotate-180"
+            data-aos="fade-right" data-aos-delay="200">
             <a href="#" class="border border-system-neutral-30 border-l-0 rounded-r-xl py-4 px-3 bg-white">
                 <img src="assets/images/google-play.png" width="32" height="105" alt="download application">
             </a>
@@ -664,7 +666,7 @@
         <!-- Hero Section  -->
         <section class="resal-section lg:py-16">
             <div class="container grid items-center grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[30px]">
-                <div class="flex flex-col gap-8 lg:gap-10">
+                <div class="flex flex-col gap-8 lg:gap-10" data-aos="fade-left" data-aos-delay="700">
                     <div class="flex flex-col gap-4 lg:gap-3">
                         <h1 class="text-light-1-primary text-[32px] lg:text-[40px] font-bold text-center lg:text-start">
                             منظومة متكاملة تسعد وتساعد الموظفين والعملاء
@@ -685,7 +687,7 @@
                     </div>
 
                 </div>
-                <div class="flex justify-center">
+                <div class="flex justify-center" data-aos="fade-right" data-aos-delay="700">
                     <img src="assets/images/Cards.png" width="482" height="505" alt="Cards">
                 </div>
             </div>
@@ -694,12 +696,12 @@
         <!-- ========================================================================= -->
 
         <!-- Partners Section  -->
-        <div class="py-12 lg:py-8">
+        <div class="py-12 lg:py-8" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <div class="designpeer-slider-wrapper swiper designpeer-swiper" data-items-desktop="auto"
                 data-items-tablet="auto" data-items-mobile="auto" data-loop="" data-autoplay-speed="4000"
                 data-freemode="true" data-space-desktop="96" data-space-tablet="48" data-space-mobile="48"
                 id="slider-1">
-                <div class="swiper-wrapper items-center">
+                <div class="swiper-wrapper items-center justify-center">
                     <!-- Slides -->
                     <div class="swiper-slide w-fit opacity-30 hover:opacity-100 transition-opacity duration-500">
                         <img src="assets/images/partners/partners-1.png" width="96" height="32" alt="partner">
@@ -753,7 +755,7 @@
         <section class="resal-section">
             <div class="container flex flex-col gap-16">
                 <!-- Section Header  -->
-                <header class="flex flex-col items-center gap-5 lg:w-2/3 lg:mx-auto">
+                <header class="flex flex-col items-center gap-5 lg:w-2/3 lg:mx-auto" data-aos="fade-up">
                     <div class="flex flex-col items-center gap-4">
                         <span class="badge badge-secondary">
                             منتجات
@@ -771,7 +773,7 @@
                 <!-- Section Content  -->
                 <div class="flex flex-col gap-4">
                     <!-- item  -->
-                    <div class="product-card">
+                    <div class="product-card" data-aos="fade-up">
                         <div class="flex flex-col gap-6 lg:gap-8">
                             <div class="flex flex-col gap-4 lg:gap-5">
                                 <span class="text-theme-teal-400 text-xl lg:text-2xl font-bold">
@@ -800,7 +802,7 @@
                     </div>
 
                     <!-- item  -->
-                    <div class="product-card">
+                    <div class="product-card" data-aos="fade-up">
                         <div class="flex flex-col gap-6 lg:gap-8">
                             <div class="flex flex-col gap-4 lg:gap-5">
                                 <span class="text-theme-violet-700 text-xl lg:text-2xl font-bold">
@@ -831,7 +833,7 @@
                     </div>
 
                     <!-- item  -->
-                    <div class="product-card">
+                    <div class="product-card" data-aos="fade-up">
                         <div class="flex flex-col gap-6 lg:gap-8">
                             <div class="flex flex-col gap-4 lg:gap-5">
                                 <span class="text-theme-yellow-400 text-xl lg:text-2xl font-bold">
@@ -860,7 +862,7 @@
                     </div>
 
                     <!-- item  -->
-                    <div class="product-card">
+                    <div class="product-card" data-aos="fade-up">
                         <div class="flex flex-col gap-6 lg:gap-8">
                             <div class="flex flex-col gap-4 lg:gap-5">
                                 <span class="text-theme-orange-400 text-xl lg:text-2xl font-bold">
@@ -896,12 +898,11 @@
         <!-- End Products Section  -->
         <!-- ========================================================================= -->
 
-
         <!-- Products2 Section  -->
         <section class="resal-section">
             <div class="container flex flex-col gap-16">
                 <!-- Section Header  -->
-                <header class="flex flex-col items-center gap-5 lg:w-2/3 lg:mx-auto">
+                <header class="flex flex-col items-center gap-5 lg:w-2/3 lg:mx-auto" data-aos="fade-up">
                     <div class="flex flex-col items-center gap-4">
                         <span class="badge badge-secondary">
                             منتجات
@@ -919,7 +920,7 @@
                 <!-- Section Content  -->
                 <div class="flex flex-col gap-4">
                     <!-- item  -->
-                    <div class="product-card lg:items-center">
+                    <div class="product-card lg:items-center" data-aos="fade-left">
                         <div class="flex flex-col gap-6 lg:gap-8">
                             <div class="flex flex-col gap-4 lg:gap-5">
                                 <span class="text-theme-teal-400 text-xl lg:text-2xl font-bold">
@@ -946,7 +947,7 @@
                         </div>
                     </div>
                     <!-- item  -->
-                    <div class="product-card lg:items-center">
+                    <div class="product-card lg:items-center" data-aos="fade-right">
                         <div class="flex flex-col gap-6 lg:gap-8">
                             <div class="flex flex-col gap-4 lg:gap-5">
                                 <span class="text-theme-violet-700 text-xl lg:text-2xl font-bold">
@@ -973,7 +974,7 @@
                         </div>
                     </div>
                     <!-- item  -->
-                    <div class="product-card lg:items-center">
+                    <div class="product-card lg:items-center" data-aos="fade-left">
                         <div class="flex flex-col gap-6 lg:gap-8">
                             <div class="flex flex-col gap-4 lg:gap-5">
                                 <span class="text-theme-yellow-400 text-xl lg:text-2xl font-bold">
@@ -1000,7 +1001,7 @@
                         </div>
                     </div>
                     <!-- item  -->
-                    <div class="product-card lg:items-center">
+                    <div class="product-card lg:items-center" data-aos="fade-right">
                         <div class="flex flex-col gap-6 lg:gap-8">
                             <div class="flex flex-col gap-4 lg:gap-5">
                                 <span class="text-theme-orange-400 text-xl lg:text-2xl font-bold">
@@ -1036,7 +1037,7 @@
         <!-- Employee Benefits Section-->
         <section class="py-12 lg:py-[72px]">
             <div class="container flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
-                <div class="flex flex-col gap-8 lg:gap-12 px-[30px] lg:px-0">
+                <div class="flex flex-col gap-8 lg:gap-12 px-[30px] lg:px-0" data-aos="fade-left">
                     <div class="flex flex-col gap-4 lg:gap-12">
                         <div class="flex flex-col gap-4 lg:gap-3">
                             <span class="badge badge-secondary">
@@ -1083,7 +1084,8 @@
                     </div>
                 </div>
 
-                <div class="relative bg-system-neutral-20 lg:rounded-2xl overflow-hidden h-[368px] lg:h-[666px]">
+                <div class="relative bg-system-neutral-20 lg:rounded-2xl overflow-hidden h-[368px] lg:h-[666px]"
+                    data-aos="fade-right">
                     <div
                         class="absolute top-12 lg:top-24 right-12 lg:right-24 w-[1444px] rounded-2xl border-4 border-white">
                         <img src="assets/images/product-imag.png" width="1440" height="1004" alt="product-imag">
@@ -1098,14 +1100,15 @@
         <section class="py-12 lg:py-[72px]">
             <div class="container flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
 
-                <div class="relative bg-system-neutral-20 lg:rounded-2xl overflow-hidden h-[368px] lg:h-[666px]">
+                <div class="relative bg-system-neutral-20 lg:rounded-2xl overflow-hidden h-[368px] lg:h-[666px]"
+                    data-aos="fade-left">
                     <div
                         class="absolute top-12 lg:top-24 ltr:right-12 rtl:left-12 ltr:lg:right-24 rtl:lg:left-24  w-[1444px] rounded-2xl border-4 border-white">
                         <img src="assets/images/product-imag.png" width="1440" height="1004" alt="product-imag">
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-8 lg:gap-12 px-[30px] lg:px-0">
+                <div class="flex flex-col gap-8 lg:gap-12 px-[30px] lg:px-0" data-aos="fade-right">
                     <div class="flex flex-col gap-4 lg:gap-12">
                         <div class="flex flex-col gap-4 lg:gap-3">
                             <span class="badge badge-secondary">
@@ -1167,7 +1170,7 @@
         <!-- Incentives Section-->
         <section class="py-12 lg:py-[72px]">
             <div class="container flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
-                <div class="flex flex-col gap-8 lg:gap-12 px-[30px] lg:px-0">
+                <div class="flex flex-col gap-8 lg:gap-12 px-[30px] lg:px-0" data-aos="fade-left">
                     <div class="flex flex-col gap-4 lg:gap-12">
                         <div class="flex flex-col gap-4 lg:gap-3">
                             <span class="badge badge-secondary">
@@ -1213,7 +1216,8 @@
                     </div>
                 </div>
 
-                <div class="relative bg-system-neutral-20 lg:rounded-2xl overflow-hidden h-[368px] lg:h-[666px]">
+                <div class="relative bg-system-neutral-20 lg:rounded-2xl overflow-hidden h-[368px] lg:h-[666px]"
+                    data-aos="fade-right">
                     <div
                         class="absolute top-12 lg:top-24 right-12 lg:right-24 w-[1444px] rounded-2xl border-4 border-white">
                         <img src="assets/images/product-imag.png" width="1440" height="1004" alt="product-imag">
@@ -1228,14 +1232,15 @@
         <section class="py-12 lg:py-[72px]">
             <div class="container flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
 
-                <div class="relative bg-system-neutral-20 lg:rounded-2xl overflow-hidden h-[368px] lg:h-[666px]">
+                <div class="relative bg-system-neutral-20 lg:rounded-2xl overflow-hidden h-[368px] lg:h-[666px]"
+                    data-aos="fade-left">
                     <div
                         class="absolute top-12 lg:top-24 ltr:right-12 rtl:left-12 ltr:lg:right-24 rtl:lg:left-24  w-[1444px] rounded-2xl border-4 border-white">
                         <img src="assets/images/product-imag.png" width="1440" height="1004" alt="product-imag">
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-8 lg:gap-12 px-[30px] lg:px-0">
+                <div class="flex flex-col gap-8 lg:gap-12 px-[30px] lg:px-0" data-aos="fade-right">
                     <div class="flex flex-col gap-4 lg:gap-12">
                         <div class="flex flex-col gap-4 lg:gap-3">
                             <span class="badge badge-secondary">
@@ -1290,7 +1295,7 @@
         <section class="resal-section">
             <div class="container flex flex-col gap-16">
                 <!-- Section Header  -->
-                <header class="flex flex-col items-center gap-5 lg:w-2/3 lg:mx-auto">
+                <header class="flex flex-col items-center gap-5 lg:w-2/3 lg:mx-auto" data-aos="fade-up">
                     <div class="flex flex-col items-center gap-4">
                         <span class="badge badge-secondary">
                             الانتشار
@@ -1308,7 +1313,7 @@
                 <!-- Section Content  -->
                 <div class="grid lg:grid-cols-3 ">
                     <!-- item  -->
-                    <div class="px-8 py-12 lg:p-12 flex flex-col items-center gap-4 lg:gap-6">
+                    <div class="px-8 py-12 lg:p-12 flex flex-col items-center gap-4 lg:gap-6" data-aos="fade-left">
                         <h3
                             class="text-light-0-solid text-6xl lg:text-7xl leading-tight lg:leading-tight font-medium text-center">
                             418+
@@ -1322,7 +1327,7 @@
                     </div>
 
                     <!-- item  -->
-                    <div
+                    <div data-aos="fade-up"
                         class="px-8 py-12 lg:p-12 flex flex-col items-center gap-4 lg:gap-6 border-y lg:border-y-0 lg:border-x border-system-neutral-40">
                         <h3
                             class="text-light-0-solid text-6xl lg:text-7xl leading-tight lg:leading-tight font-medium text-center">
@@ -1337,7 +1342,7 @@
                     </div>
 
                     <!-- item  -->
-                    <div class="px-8 py-12 lg:p-12 flex flex-col items-center gap-4 lg:gap-6">
+                    <div class="px-8 py-12 lg:p-12 flex flex-col items-center gap-4 lg:gap-6" data-aos="fade-right">
                         <h3
                             class="text-light-0-solid text-6xl lg:text-7xl leading-tight lg:leading-tight font-medium text-center">
                             150K+
@@ -1360,20 +1365,31 @@
         <section class="resal-section lg:pt-40">
             <div
                 class="container bg-system-neutral-800 p-6 lg:py-12 lg:px-[60px] rounded-2xl flex flex-col lg:grid lg:grid-cols-2 gap-[30px]">
-                <div class="relative min-h-[300px]">
-                    <img src="assets/images/cta-card-1.png" width="501" height="273" alt="Cards"
-                        class="absolute left-1/2 -translate-x-1/2 bottom-0">
-                    <img src="assets/images/cta-card-2.png" width="501" height="273" alt="Cards"
-                        class="absolute left-1/2 -translate-x-1/2 bottom-12">
-                    <img src="assets/images/cta-card-3.png" width="501" height="273" alt="Cards"
-                        class="absolute left-1/2 -translate-x-1/2 bottom-24">
-                    <img src="assets/images/cta-card-4.png" width="501" height="273" alt="Cards"
-                        class="absolute left-1/2 -translate-x-1/2 bottom-36">
-                    <img src="assets/images/cta-card-5.png" width="501" height="273" alt="Cards"
-                        class="absolute left-1/2 -translate-x-1/2 bottom-48">
+                <div class="relative min-h-[300px]" data-aos="fade-up">
+                    <div class="absolute w-full left-1/2 -translate-x-1/2 bottom-0">
+                        <img src="assets/images/cta-card-1.png" width="501" height="273" alt="Cards" data-aos="fade-up"
+                            data-aos-delay="700">
+                    </div>
+                    <div class="absolute w-full left-1/2 -translate-x-1/2 bottom-12">
+                        <img src="assets/images/cta-card-2.png" width="501" height="273" alt="Cards" data-aos="fade-up"
+                            data-aos-delay="600">
+                    </div>
+                    <div class="absolute w-full left-1/2 -translate-x-1/2 bottom-24">
+                        <img src="assets/images/cta-card-3.png" width="501" height="273" alt="Cards" data-aos="fade-up"
+                            data-aos-delay="500">
+                    </div>
+                    <div class="absolute w-full left-1/2 -translate-x-1/2 bottom-36">
+                        <img src="assets/images/cta-card-4.png" width="501" height="273" alt="Cards" data-aos="fade-up"
+                            data-aos-delay="300">
+                    </div>
+                    <div class="absolute w-full left-1/2 -translate-x-1/2 bottom-48">
+                        <img src="assets/images/cta-card-5.png" width="501" height="273" alt="Cards" data-aos="fade-up"
+                            data-aos-delay="100">
+                    </div>
+
                 </div>
 
-                <div class="flex flex-col gap-8 lg:items-start">
+                <div class="flex flex-col gap-8 lg:items-start" data-aos="fade-right">
                     <div class="flex flex-col gap-6">
                         <h2 class="text-white text-[32px] lg:text-[40px] font-bold text-center lg:text-start">
                             ابـــدأ رحــــلة تــــعزيز الــــولاء والارتباط لموظـفيك .. وعملائك
@@ -1395,8 +1411,8 @@
 
         <!-- CTA  -->
         <section class="resal-section lg:py-16">
-            <div
-                class="container bg-system-primary-600 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center">
+            <div class="container bg-system-primary-600 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center"
+                data-aos="fade-up">
                 <div class="flex flex-col gap-8 lg:items-start">
                     <div class="flex flex-col gap-6">
 
@@ -1425,8 +1441,8 @@
 
         <!-- CTA  -->
         <section class="resal-section lg:py-16">
-            <div
-                class="container bg-theme-violet-600 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center">
+            <div class="container bg-theme-violet-600 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center"
+                data-aos="fade-up">
                 <div class="flex flex-col gap-8 lg:items-start">
                     <div class="flex flex-col gap-6">
 
@@ -1455,8 +1471,8 @@
 
         <!-- CTA  -->
         <section class="resal-section lg:py-16">
-            <div
-                class="container bg-theme-teal-600 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center">
+            <div class="container bg-theme-teal-600 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center"
+                data-aos="fade-up">
                 <div class="flex flex-col gap-8 lg:items-start">
                     <div class="flex flex-col gap-6">
 
@@ -1485,8 +1501,8 @@
 
         <!-- CTA  -->
         <section class="resal-section lg:py-16">
-            <div
-                class="container bg-theme-yellow-400 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center">
+            <div class="container bg-theme-yellow-400 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center"
+                data-aos="fade-up">
                 <div class="flex flex-col gap-8 lg:items-start">
                     <div class="flex flex-col gap-6">
 
@@ -1515,8 +1531,8 @@
 
         <!-- CTA  -->
         <section class="resal-section lg:py-16">
-            <div
-                class="container bg-theme-orange-dark-400 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center">
+            <div class="container bg-theme-orange-dark-400 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center"
+                data-aos="fade-up">
                 <div class="flex flex-col gap-8 lg:items-start">
                     <div class="flex flex-col gap-6">
 
@@ -1542,11 +1558,10 @@
         <!-- End CTA -->
         <!-- ========================================================================= -->
 
-
         <!-- CTA  -->
         <section class="resal-section lg:py-16">
-            <div
-                class="container bg-system-neutral-100 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center">
+            <div class="container bg-system-neutral-100 lg:px-[60px] p-8 lg:py-12 rounded-2xl flex flex-col lg:flex-row gap-[30px] items-center"
+                data-aos="fade-up">
                 <div class="flex flex-col gap-8 lg:items-start">
                     <div class="flex flex-col gap-6">
 
@@ -1577,24 +1592,24 @@
         <section class="resal-section overflow-hidden">
 
             <div class="container flex items-center justify-center relative h-[926px] lg:h-[810px]">
-                <img src="assets/images/enjoy-1.png" width="150" height="110" alt="absolute"
+                <img src="assets/images/enjoy-1.png" width="150" height="110" alt="absolute" data-aos="fade-up" data-aos-delay="100"
                     class="w-[112px] lg:w-[150px] absolute rounded-2xl top-64 right-0 hidden md:block">
-                <img src="assets/images/enjoy-2.png" width="150" height="110" alt="absolute"
+                <img src="assets/images/enjoy-2.png" width="150" height="110" alt="absolute" data-aos="fade-up" data-aos-delay="200"
                     class="w-[112px] lg:w-[150px] absolute rounded-2xl bottom-20 lg:bottom-auto lg:top-56 -right-24 lg:right-auto lg:-left-10">
-                <img src="assets/images/enjoy-3.png" width="150" height="110" alt="absolute"
+                <img src="assets/images/enjoy-3.png" width="150" height="110" alt="absolute" data-aos="fade-up" data-aos-delay="300"
                     class="w-[112px] lg:w-[150px] absolute rounded-2xl top-36 lg:top-auto lg:bottom-20 left-80 lg:left-60">
-                <img src="assets/images/enjoy-4.png" width="150" height="110" alt="absolute"
+                <img src="assets/images/enjoy-4.png" width="150" height="110" alt="absolute" data-aos="fade-up" data-aos-delay="400"
                     class="w-[112px] lg:w-[150px] absolute rounded-2xl bottom-36 -right-32 hidden md:block">
-                <img src="assets/images/enjoy-5.png" width="150" height="110" alt="absolute"
+                <img src="assets/images/enjoy-5.png" width="150" height="110" alt="absolute" data-aos="fade-up" data-aos-delay="500"
                     class="w-[112px] lg:w-[150px] absolute rounded-2xl top-6 lg:top-auto lg:bottom-64 -left-4 lg:left-14">
-                <img src="assets/images/enjoy-6.png" width="150" height="110" alt="absolute"
+                <img src="assets/images/enjoy-6.png" width="150" height="110" alt="absolute" data-aos="fade-up" data-aos-delay="600"
                     class="w-[112px] lg:w-[150px] absolute rounded-2xl bottom-20 right-52 hidden md:block">
-                <img src="assets/images/enjoy-7.png" width="150" height="110" alt="absolute"
+                <img src="assets/images/enjoy-7.png" width="150" height="110" alt="absolute" data-aos="fade-up" data-aos-delay="700"
                     class="w-[112px] lg:w-[150px] absolute rounded-2xl bottom-0 lg:bottom-auto lg:top-0 -left-10 lg:left-auto lg:right-52">
-                <img src="assets/images/enjoy-8.png" width="150" height="110" alt="absolute"
+                <img src="assets/images/enjoy-8.png" width="150" height="110" alt="absolute" data-aos="fade-up" data-aos-delay="800"
                     class="w-[112px] lg:w-[150px] absolute rounded-2xl bottom-36 lg:bottom-auto lg:top-16 left-24 lg:left-52">
 
-                <div class="lg:w-1/2 flex flex-col gap-10 lg:items-center">
+                <div class="lg:w-1/2 flex flex-col gap-10 lg:items-center" data-aos="fade-up">
                     <div class="flex flex-col gap-6 lg:items-center">
                         <h2
                             class="text-light-1-primary text-[32px] lg:text-5xl lg:leading-normal font-bold text-center">
@@ -1616,7 +1631,7 @@
         <!-- Resal testimonials Success Stories Section  -->
         <section class="resal-section">
             <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-                <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-6" data-aos="fade-left">
                     <div class="flex flex-col gap-4">
                         <span class="badge badge-primary">
                             قصص نجاحنا
@@ -1630,7 +1645,7 @@
                         الهدايا والتقدير.
                     </p>
                 </div>
-                <div class="w-full">
+                <div class="w-full" data-aos="fade-right">
                     <div class="designpeer-slider-wrapper swiper designpeer-swiper w-full flex flex-col gap-6 lg:gap-8"
                         data-items-desktop="1" data-items-tablet="1" data-items-mobile="1" data-loop="true"
                         data-autoplay-speed="5000" data-space-desktop="0" data-space-tablet="0" data-space-mobile="0"
@@ -1738,7 +1753,7 @@
                 class="hidden lg:block absolute bg-gradient-to-b from-[#04003514] to-white h-[612px] w-[200%] -rotate-[30deg] left-1/2 -translate-x-1/2 bottom-24 origin-center">
             </div>
             <div class="container flex flex-col gap-12 relative ltr:items-end">
-                <div class="lg:w-1/2 flex flex-col gap-5gap-8">
+                <div class="lg:w-1/2 flex flex-col gap-5gap-8"  data-aos="fade-up">
                     <h2 class="text-light-1-primary text-[32px] lg:text-5xl leading-normal lg:leading-normal font-bold">
                         ابـــدأ رحــــلة تــــعزيز الــــولاء والارتباط لموظـفيك .. وعملائك
                     </h2>
@@ -1932,6 +1947,7 @@
 
     <!-- Start Scripts -->
     <script src="assets/scripts/jquiry.js"></script>
+    <script src="assets/scripts/aos.js"></script>
     <script src="assets/scripts/swiper.js"></script>
     <script src="assets/scripts/scripts.js"></script>
 </body>
