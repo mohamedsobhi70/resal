@@ -3,11 +3,12 @@ $(window).on("load", function () {
     AOS.init({
         debounceDelay: 200, // the delay on debounce used while resizing window (advanced)
         throttleDelay: 399, // the delay on throttle used while scrolling the page (advanced)
-        duration: 800, // values from 0 to 3000, with step 50ms
+        duration: 900, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
         once: true, // whether animation should happen only once - while scrolling down
-      
-      });
+        disable: 'mobile'
+    });
+
     // Slider Component
     if ($(".designpeer-slider-wrapper").length > 0) {
         $(".designpeer-slider-wrapper").each(function () {
@@ -221,7 +222,6 @@ $(window).on("load", function () {
     // -----------------------------------------------
 
 });
-
 
 // 
 if ($(".paralex-element-1").length > 0) {
