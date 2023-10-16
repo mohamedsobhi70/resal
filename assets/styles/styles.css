@@ -1497,6 +1497,9 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(247 248 250 / var(--tw-bg-opacity));
   padding: 1.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 @media (min-width: 1024px) {
@@ -3715,18 +3718,6 @@ body {
 
 .max-h-\[400px\] {
   max-height: 400px;
-}
-
-.max-h-\[656px\] {
-  max-height: 656px;
-}
-
-.max-h-\[730px\] {
-  max-height: 730px;
-}
-
-.max-h-\[930px\] {
-  max-height: 930px;
 }
 
 .max-h-\[830px\] {

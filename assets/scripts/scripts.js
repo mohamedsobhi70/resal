@@ -265,4 +265,15 @@ if ($(".nav-has-megamenu").length > 0) {
         $(this).find(".megamenu").removeClass("active");
     })
 }
+if ($(".tilt-container").length > 0) {
+    $(".tilt-container").tilt({
+        maxTilt: 15,
+        perspective: 1400,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+        speed: 1200,
+        glare: true,
+        maxGlare: 0.2,
+        scale: 1.04
+      });
+}
 
